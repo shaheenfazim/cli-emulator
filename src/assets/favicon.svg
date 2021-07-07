@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+	<defs>
+		<clipPath id="b">
+			<rect width="32" height="32" />
+		</clipPath>
+	</defs>
+	<g id="a" clip-path="url(#b)">
+		<rect width="32" height="32" fill="#1e1e1e" />
+		<g transform="translate(0 1)" stroke="#1e1e1e" stroke-width="2">
+			<rect width="32" height="30" rx="2" stroke="none" />
+			<rect x="1" y="1" width="30" height="28" rx="1" fill="none" />
+		</g>
+		<g transform="matrix(0.998, -0.07, 0.07, 0.998, -0.979, 2.414)">
+			<path d="M0,0,10.589,8.824" transform="matrix(0.985, 0.174, -0.174, 0.985, 7.432, 5.9)" fill="none" stroke="#00ff1a" stroke-width="4" />
+			<line y1="9" x2="10" transform="translate(6 14)" fill="none" stroke="#00ff1a" stroke-width="4" />
+		</g>
+		<line y2="19" id="blink" transform="translate(23.5 6.5)" fill="none" stroke="#00ff1a" stroke-width="5" />
+        <animate xlink:href="#blink" attributeType="XML" attributeName="stroke" values="#000000;#00ff1a;#000000;#00ff1a" dur="0.75s" repeatCount="indefinite"/>
+
+	</g>
+</svg>

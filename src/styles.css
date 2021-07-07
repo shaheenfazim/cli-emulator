@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+
+html, body{
+    /*overflow-y: hidden;  Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+body{
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 0px;/*hide scroll bar*/
+}
+::-moz-scrollbar {
+  width: 0px;/*hide scroll bar*/
+}
+
+
+
+html {
+    --bg: #000000; 
+    --font: #57ff57;
+    --flick: #325c32;
+    --board: #57ff57;
+    --keys: #444;
+ }
+  html[data-theme='light'] {
+    --bg: #ffffff; 
+    --font: #000000;
+    --flick: rgb(187, 187, 187);
+    --board: #000000;
+    --keys: #444;
+ }
+ html[data-theme='chrimson'] {
+  --bg: #860022; 
+  --font: #2e0000;
+  --flick: rgb(90, 5, 5);
+  --board: #2e0000;
+  --keys: rgb(0, 0, 0);
+}
+html[data-theme='bluescreen'] {
+  --bg: #1100ff; 
+  --font: #ffd7ff;
+  --flick: rgb(126, 180, 250);
+  --board: #000000;
+  --keys: #4c40f6e7;
+}
+
+ html.transition, html.transition *, html.transition *:before, html.transition *:after {
+    transition: all 750ms !important;
+    transition-delay: 0 !important;
+  }
+
+html, body{
+  background-color: var(--bg);
+}

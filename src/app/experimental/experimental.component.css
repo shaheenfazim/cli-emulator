@@ -1,0 +1,119 @@
+@media screen and (max-width: 994px) {
+
+
+  .console-bg{
+   padding:10px 10px 0px 5px;
+   font-size: 16px;
+ }
+ .command-line{
+   line-height: 1; 
+ }
+ .command-enter::before {
+   position: relative;
+   top: 3.5px;
+   font-size: 25px;
+   content: '»';
+   letter-spacing: .5rem;
+   font-weight: bold;
+ }
+ .bottom-div{
+   width:90%;
+ }
+
+}
+@media screen and (min-width: 994px) {
+    .console-bg{
+     padding:30px 30px 0px 30px;
+     font-size: 18px;
+   }
+   .command-line{
+     line-height: 1.5; 
+   }
+   .command-enter::before {
+     position: relative;
+     top: 3px;
+     font-size: 35px;
+     content: '»';
+     letter-spacing: .5rem;
+     font-weight: bold;
+   }
+   .bottom-div{
+     width:85%;
+   }
+
+}
+@media screen and (min-width: 1300px) {
+
+  .console-bg{
+   padding:50px 50px 0px 50px;
+   font-size: 20px;
+ }
+ .command-line{
+   line-height: 1.75; 
+ }
+ .command-enter::before {
+   position: relative;
+   top: 3px;
+   font-size: 35px;
+   content: '»';
+   letter-spacing: .5rem;
+   font-weight: bold;
+ }
+ .bottom-div{
+   width:80%;
+ }
+
+ 
+}
+
+
+
+.bottom-div{
+ height: 25px;
+ user-select: none;
+}
+
+
+.terminal-container {
+ margin: 0;
+ text-align: left;
+ font-family: monospace;
+
+}
+
+.terminal-container .command-line {
+ white-space: pre;
+ color: var(--font);
+    
+}
+
+
+
+.terminal-container .command-line > *:last-child::after {
+     content: '█';
+     display: inline-block;
+     text-decoration: underline;
+     color:  var(--bg);
+     animation: cursor-blink 333ms infinite;
+   }
+
+
+@keyframes font-refresh-flicker {
+ 0% { color: var(--font); }
+ 50% { color: var(--flick); }
+ 100% { color: var(--font); }
+}
+   
+@keyframes cursor-blink {
+ 50% { color:  var(--font); }
+}
+
+
+
+
+
+
+
+
+
+

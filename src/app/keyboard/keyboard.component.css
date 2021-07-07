@@ -1,0 +1,369 @@
+/**Custom Keyboard**/
+
+ 
+  .screen-keyboard {
+    position: fixed;
+    bottom: 0; 
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 250px;
+    padding: 18px 0;
+    border-top: 5px solid var(--board);
+    background-color: var(--bg);
+    user-select: none;
+    -webkit-animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+  
+  .screen-keyboard-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  
+  .screen-keyboard-row-key {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 9vw; /*change accord to mobile is far better to align keys*/
+    height: 40px;
+    border-radius: 4px;
+    background: var(--keys);
+    margin: 2px;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.300);
+  }
+
+ 
+
+
+  /*Disabled casue of UX
+  .screen-keyboard-row-key:hover {
+    opacity: 0.75;
+    transform: scale(1.07);
+  }
+  .screen-keyboard-row-key:focus {
+    opacity: 0.75;
+  }
+  */
+  
+  
+  .screen-keyboard-row-case {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 12.5vw;
+    height: 40px;
+    border-radius: 4px;
+    background: var(--keys);
+    margin: 2px 4px;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.300);
+
+  }
+  .screen-keyboard-row-case:hover {
+    opacity: 0.75;
+    transform: scale(1.07);
+  }
+  .screen-keyboard-row-case:focus {
+    opacity: 0.75;
+  }
+  
+  .screen-keyboard-row-case-icon-lower{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    fill: #FFF;
+  
+  }
+  .screen-keyboard-row-case-icon-upper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 18px;
+    height: 18px;
+    fill: #FFF;
+  }
+  
+  
+  
+  .screen-keyboard-row-backspace {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 12.5vw;
+    height: 40px;
+    border-radius: 4px;
+    background: var(--keys);
+    margin: 2px 4px;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.300);
+  }
+  .screen-keyboard-row-backspace:hover {
+    opacity: 0.75;
+    transform: scale(1.07);
+  }
+  .screen-keyboard-row-backspace:focus {
+    opacity: 0.75;
+  }
+  
+  .screen-keyboard-row-backspace-icon {
+    width: 20px;
+    height: 20px;
+    fill: #FFF;
+  }
+  
+  .screen-keyboard-row-symbols {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 12.5vw;
+    height: 44px;
+    border-radius: 4px;
+    background: var(--keys);
+    margin: 2px;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: default;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+
+  }
+  .screen-keyboard-row-symbols:hover {
+    opacity: 0.75;
+  }
+  .screen-keyboard-row-symbols:focus {
+    opacity: 0.75;
+  }
+  
+  .screen-keyboard-row-comma {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 7.5vw;
+    height: 44px;
+    border-radius: 4px;
+    background: var(--keys);
+    margin: 2px;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.300);
+  }
+  .screen-keyboard-row-comma:hover {
+    opacity: 0.75;
+    transform: scale(1.07);
+  }
+  .screen-keyboard-row-comma:focus {
+    opacity: 0.75;
+  }
+  
+  .screen-keyboard-row-whitespace {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 42.5vw;
+    height: 44px;
+    border-radius: 4px;
+    background: var(--keys);
+    margin: 2px;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .screen-keyboard-row-whitespace:hover {
+    opacity: 0.75;
+    transform: scale(1.02);
+  }
+  .screen-keyboard-row-whitespace:focus {
+    opacity: 0.75;
+  }
+  
+  .screen-keyboard-row-dot {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 7.5vw;
+    height: 44px;
+    border-radius: 4px;
+    background: var(--keys);
+    margin: 2px;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.300);
+  }
+  .screen-keyboard-row-dot:hover {
+    opacity: 0.75;
+    transform: scale(1.07);
+  }
+  .screen-keyboard-row-dot:focus {
+    opacity: 0.75;
+  }
+  
+  .screen-keyboard-row-enter {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 12.5vw;
+    height: 44px;
+    border-radius: 4px;
+    background: var(--board);
+    margin: 2px;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.300);
+  }
+
+
+  .screen-keyboard-row-clr {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 12.5vw;
+    height: 40px;
+    border-radius: 4px;
+    background: var(--keys);
+    margin: 2px 4px;
+    padding: 0;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.300);
+    
+    
+  }
+
+
+  .screen-keyboard-row-clr:hover {
+    opacity: 0.75;
+    transform: scale(1.07);
+  }
+  .screen-keyboard-clr:focus {
+    opacity: 0.75;
+  }
+  
+
+  
+  
+
+    
+  
+  .switchkey{
+    display: none;;
+  }
+  
+  /* Add Animation */
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1) translateY(1000px);
+      opacity: 1;
+   }
+    100% {
+      transform: scale(1) translateY(0px);
+      opacity: 1;
+   }
+  }
+  @keyframes scaleDown {
+    0% {
+      transform: scale(1) translateY(0px);
+      opacity: 1;
+   }
+    100% {
+      transform: scale(0.8) translateY(1000px);
+      opacity: 0;
+   }
+  }
+  
+
+  
+  
+  
+  
+    
+  
+  
+  
